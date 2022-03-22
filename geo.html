@@ -1,0 +1,3209 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>sql_internship</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+	body {
+  		width: 60%;
+	}
+    </style>
+</head>
+
+<body>
+
+
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">name</th>
+<th title="Field #2">area</th>
+</tr></thead>
+<tbody><tr>
+<td>Gibson Desert</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Tanami</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Simpson Desert</td>
+<td align="right">145000</td>
+</tr>
+<tr>
+<td>Karakum</td>
+<td align="right">300000</td>
+</tr>
+<tr>
+<td>Kysylkum</td>
+<td align="right">300000</td>
+</tr>
+<tr>
+<td>Mujunkum</td>
+<td align="right">37500</td>
+</tr>
+<tr>
+<td>Atacama</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Grand Victoria Desert</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Grand Sand Desert</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Grand Erg Ouest</td>
+<td align="right">40000</td>
+</tr>
+<tr>
+<td>Grand Erg Est</td>
+<td align="right">70000</td>
+</tr>
+<tr>
+<td>Hamada el-Hamra</td>
+<td align="right">20000</td>
+</tr>
+<tr>
+<td>Fesan</td>
+<td align="right">130000</td>
+</tr>
+<tr>
+<td>Libyan Desert</td>
+<td align="right">190000</td>
+</tr>
+<tr>
+<td>Erg Rebiana</td>
+<td align="right">30000</td>
+</tr>
+<tr>
+<td>Arabian Desert</td>
+<td align="right">50000</td>
+</tr>
+<tr>
+<td>Nubian Desert</td>
+<td align="right">30000</td>
+</tr>
+<tr>
+<td>Erg de Bilma</td>
+<td align="right">25000</td>
+</tr>
+<tr>
+<td>Tenere</td>
+<td align="right">70000</td>
+</tr>
+<tr>
+<td>Tanesruft</td>
+<td align="right">30000</td>
+</tr>
+<tr>
+<td>Asauad</td>
+<td align="right">35000</td>
+</tr>
+<tr>
+<td>Erg Schesch</td>
+<td align="right">45000</td>
+</tr>
+<tr>
+<td>Erg Igidi</td>
+<td align="right">35000</td>
+</tr>
+<tr>
+<td>Uaran</td>
+<td align="right">20000</td>
+</tr>
+<tr>
+<td>Trarza</td>
+<td align="right">25000</td>
+</tr>
+<tr>
+<td>Makteir</td>
+<td align="right">25000</td>
+</tr>
+<tr>
+<td>Sagia el-Hamra</td>
+<td align="right">15000</td>
+</tr>
+<tr>
+<td>Dschurab</td>
+<td align="right">15000</td>
+</tr>
+<tr>
+<td>Hamada du Draa</td>
+<td align="right">20000</td>
+</tr>
+<tr>
+<td>Kalahari</td>
+<td align="right">160000</td>
+</tr>
+</tbody></table>
+
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">name</th>
+<th title="Field #2">islands</th>
+<th title="Field #3">area</th>
+<th title="Field #4">longitude</th>
+<th title="Field #5">latitude</th>
+</tr></thead>
+<tbody><tr>
+<td>Iceland</td>
+<td>Iceland</td>
+<td align="right">102829</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Malta</td>
+<td> </td>
+<td align="right">316</td>
+<td align="right">14.1</td>
+<td align="right">36</td>
+</tr>
+<tr>
+<td>Svalbard</td>
+<td>Svalbard</td>
+<td align="right">39043</td>
+<td align="right">20</td>
+<td align="right">78</td>
+</tr>
+<tr>
+<td>Sri Lanka</td>
+<td>Sri Lanka</td>
+<td align="right">65610</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Taiwan</td>
+<td>Taiwan</td>
+<td align="right">36188</td>
+<td align="right">121</td>
+<td align="right">24</td>
+</tr>
+<tr>
+<td>Bahamas</td>
+<td>Bahama Islands</td>
+<td align="right">13935</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Barbados</td>
+<td>Kleine Antillen</td>
+<td align="right">431</td>
+<td align="right">-59.3</td>
+<td align="right">13</td>
+</tr>
+<tr>
+<td>Cuba</td>
+<td>Grosse Antillen</td>
+<td align="right">114524</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Dominica</td>
+<td>Kleine Antillen</td>
+<td align="right">751</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Greenland</td>
+<td> </td>
+<td align="right">2175600</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Grenada</td>
+<td>Kleine Antillen</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Jamaica</td>
+<td>Grosse Antillen</td>
+<td align="right">10991</td>
+<td align="right">-77.3</td>
+<td align="right">18.1</td>
+</tr>
+<tr>
+<td>Saint Lucia</td>
+<td>Kleine Antillen</td>
+<td align="right">616</td>
+<td align="right">-60.5</td>
+<td align="right">14</td>
+</tr>
+<tr>
+<td>Kiribati</td>
+<td>Kiribati</td>
+<td align="right">886</td>
+<td align="right">176</td>
+<td align="right">-1</td>
+</tr>
+<tr>
+<td>Nauru</td>
+<td>Nauru</td>
+<td align="right">21</td>
+<td align="right">174</td>
+<td align="right">-2</td>
+</tr>
+<tr>
+<td>Palau</td>
+<td>Carolines</td>
+<td align="right">458</td>
+<td align="right">102</td>
+<td align="right">27</td>
+</tr>
+<tr>
+<td>Tonga</td>
+<td>Tonga</td>
+<td align="right">699</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Tuvalu</td>
+<td>Tuvalu</td>
+<td align="right">24</td>
+<td align="right">176</td>
+<td align="right">-8</td>
+</tr>
+<tr>
+<td>Vanuatu</td>
+<td>Vanuatu</td>
+<td align="right">14763</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Mauritius</td>
+<td>Mauritius</td>
+<td align="right">2000</td>
+<td align="right">57</td>
+<td align="right">-20</td>
+</tr>
+<tr>
+<td>Sao Tome and Principe</td>
+<td>Sao Tome and Principe</td>
+<td align="right">964</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Aland</td>
+<td>Aland Islands</td>
+<td align="right">650</td>
+<td align="right">20</td>
+<td align="right">60.1</td>
+</tr>
+<tr>
+<td>Corse</td>
+<td> </td>
+<td align="right">8681</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Sardegna</td>
+<td> </td>
+<td align="right">24090</td>
+<td align="right">9</td>
+<td align="right">40</td>
+</tr>
+<tr>
+<td>Madeira</td>
+<td>Madeira</td>
+<td align="right">740</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Gotland</td>
+<td> </td>
+<td align="right">3140</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Anglesey</td>
+<td> </td>
+<td align="right">715</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Hokkaido</td>
+<td>Japan</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Prince Edward Island</td>
+<td> </td>
+<td align="right"></td>
+<td align="right">-63</td>
+<td align="right">46.5</td>
+</tr>
+<tr>
+<td>Hawaii</td>
+<td>Hawaii Islands</td>
+<td align="right"></td>
+<td align="right">-155.2</td>
+<td align="right">19.3</td>
+</tr>
+<tr>
+<td>Tasmania</td>
+<td> </td>
+<td align="right">67800</td>
+<td align="right">145</td>
+<td align="right">-42</td>
+</tr>
+<tr>
+<td>La Palma</td>
+<td>Canares</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Santa Maria</td>
+<td>Azores</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Fidschi</td>
+<td>Fidschi</td>
+<td align="right">18272</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Westsamoa</td>
+<td>Westsamoa</td>
+<td align="right">2842</td>
+<td align="right">-172</td>
+<td align="right">-14</td>
+</tr>
+<tr>
+<td>Saint Vincent</td>
+<td>Kleine Antillen</td>
+<td align="right">389</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Madagaskar</td>
+<td>Madagaskar</td>
+<td align="right">587041</td>
+<td align="right">46</td>
+<td align="right">-20</td>
+</tr>
+<tr>
+<td>Seychellen</td>
+<td>Seychellen</td>
+<td align="right">280</td>
+<td align="right">56</td>
+<td align="right">-5</td>
+</tr>
+<tr>
+<td>Zypern</td>
+<td>Zypern</td>
+<td align="right">9251</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Bohol</td>
+<td>Philippines</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Negros</td>
+<td>Philippines</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Panay</td>
+<td>Philippines</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Leyte</td>
+<td>Philippines</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Samar</td>
+<td>Philippines</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Mindoro</td>
+<td>Philippines</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Luzon</td>
+<td>Philippines</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Mindanao</td>
+<td>Philippines</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Palawan</td>
+<td>Philippines</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Kyushu</td>
+<td>Japan</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Shikoku</td>
+<td>Japan</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Honshu</td>
+<td>Japan</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Bali</td>
+<td> </td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Sumatra</td>
+<td> </td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Oeland</td>
+<td> </td>
+<td align="right">1344</td>
+<td align="right">17</td>
+<td align="right">57</td>
+</tr>
+<tr>
+<td>Aust-Vagoey</td>
+<td>Lofotes</td>
+<td align="right">526</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Sachalin</td>
+<td> </td>
+<td align="right">76400</td>
+<td align="right">143</td>
+<td align="right">50</td>
+</tr>
+<tr>
+<td>Paramuschir</td>
+<td>Curiles</td>
+<td align="right">2042</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Kotelny island</td>
+<td> </td>
+<td align="right">11665</td>
+<td align="right">140</td>
+<td align="right">75</td>
+</tr>
+<tr>
+<td>Dagoe</td>
+<td> </td>
+<td align="right">965</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Oesel</td>
+<td> </td>
+<td align="right">2714</td>
+<td align="right">22</td>
+<td align="right">58.3</td>
+</tr>
+<tr>
+<td>Seeland</td>
+<td> </td>
+<td align="right">7439</td>
+<td align="right">12</td>
+<td align="right">55.3</td>
+</tr>
+<tr>
+<td>Fuenen</td>
+<td> </td>
+<td align="right">2976</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Langeland</td>
+<td> </td>
+<td align="right">284</td>
+<td align="right">10.5</td>
+<td align="right">55</td>
+</tr>
+<tr>
+<td>Falster</td>
+<td> </td>
+<td align="right">514</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lolland</td>
+<td> </td>
+<td align="right">1241</td>
+<td align="right">11.5</td>
+<td align="right">54.4</td>
+</tr>
+<tr>
+<td>Bornholm</td>
+<td> </td>
+<td align="right">588</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Hispaniola</td>
+<td>Grosse Antillen</td>
+<td align="right">76192</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Barbuda</td>
+<td>Kleine Antillen</td>
+<td align="right">161</td>
+<td align="right">-61.4</td>
+<td align="right">17.3</td>
+</tr>
+<tr>
+<td>Saint Kitts</td>
+<td>Kleine Antillen</td>
+<td align="right">164</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Nevis</td>
+<td>Kleine Antillen</td>
+<td align="right">93</td>
+<td align="right">-62.3</td>
+<td align="right">17</td>
+</tr>
+<tr>
+<td>Trinidad</td>
+<td>Kleine Antillen</td>
+<td align="right">4827</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Tobago</td>
+<td>Kleine Antillen</td>
+<td align="right">301</td>
+<td align="right">-60.3</td>
+<td align="right">11.1</td>
+</tr>
+<tr>
+<td>Isabela</td>
+<td>Galapagos Islands</td>
+<td align="right">5436</td>
+<td align="right">-91.3</td>
+<td align="right">-1</td>
+</tr>
+<tr>
+<td>Barra</td>
+<td>Outer Hebrides</td>
+<td align="right">91</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>South Ulist</td>
+<td>Outer Hebrides</td>
+<td align="right"></td>
+<td align="right">-7.2</td>
+<td align="right">57.2</td>
+</tr>
+<tr>
+<td>Benbecula</td>
+<td>Outer Hebrides</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>North Ulist</td>
+<td>Outer Hebrides</td>
+<td align="right"></td>
+<td align="right">-7.1</td>
+<td align="right">57.4</td>
+</tr>
+<tr>
+<td>Harris</td>
+<td>Outer Hebrides</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lewis</td>
+<td>Outer Hebrides</td>
+<td align="right"></td>
+<td align="right">-7</td>
+<td align="right">58</td>
+</tr>
+<tr>
+<td>Islay</td>
+<td>Inner Hebrides</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Jura</td>
+<td>Inner Hebrides</td>
+<td align="right"></td>
+<td align="right">-6</td>
+<td align="right">56</td>
+</tr>
+<tr>
+<td>Colonsay</td>
+<td>Inner Hebrides</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Mull</td>
+<td>Inner Hebrides</td>
+<td align="right">910</td>
+<td align="right">6</td>
+<td align="right">56.3</td>
+</tr>
+<tr>
+<td>Tiree</td>
+<td>Inner Hebrides</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Coll</td>
+<td>Inner Hebrides</td>
+<td align="right"></td>
+<td align="right">-6.5</td>
+<td align="right">56.5</td>
+</tr>
+<tr>
+<td>Rhum</td>
+<td>Inner Hebrides</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Skye</td>
+<td>Inner Hebrides</td>
+<td align="right"></td>
+<td align="right">-6.3</td>
+<td align="right">57.3</td>
+</tr>
+<tr>
+<td>Staffa</td>
+<td>Inner Hebrides</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Iona</td>
+<td>Inner Hebrides</td>
+<td align="right"></td>
+<td align="right">-6.3</td>
+<td align="right">56.2</td>
+</tr>
+<tr>
+<td>Arran</td>
+<td> </td>
+<td align="right"></td>
+<td align="right">-5.5</td>
+<td align="right">55.3</td>
+</tr>
+<tr>
+<td>South Ronaldson</td>
+<td>Orkney Islands</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Hoy</td>
+<td>Orkney Islands</td>
+<td align="right"></td>
+<td align="right">-3.2</td>
+<td align="right">59.1</td>
+</tr>
+<tr>
+<td>Mainland</td>
+<td>Orkney Islands</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Westray</td>
+<td>Orkney Islands</td>
+<td align="right"></td>
+<td align="right">-3</td>
+<td align="right">59.4</td>
+</tr>
+<tr>
+<td>Sanday</td>
+<td>Orkney Islands</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lundy</td>
+<td> </td>
+<td align="right"></td>
+<td align="right">-4.5</td>
+<td align="right">51</td>
+</tr>
+<tr>
+<td>Bishop Rock</td>
+<td>Scilly Islands</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>West Falkland</td>
+<td>Falkland Islands</td>
+<td align="right">12173</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>East Falkland</td>
+<td>Falkland Islands</td>
+<td align="right">12173</td>
+<td align="right">-61</td>
+<td align="right">-53</td>
+</tr>
+<tr>
+<td>South Georgia</td>
+<td> </td>
+<td align="right">3753</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Antigua</td>
+<td>Kleine Antillen</td>
+<td align="right">280</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Sicily</td>
+<td> </td>
+<td align="right">25462</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Alicudi</td>
+<td>Lipari Islands</td>
+<td align="right"></td>
+<td align="right">14.1</td>
+<td align="right">38.3</td>
+</tr>
+<tr>
+<td>Salina</td>
+<td>Lipari Islands</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lipari</td>
+<td>Lipari Islands</td>
+<td align="right"></td>
+<td align="right">14.4</td>
+<td align="right">38.3</td>
+</tr>
+<tr>
+<td>Vulcano</td>
+<td>Lipari Islands</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Panarea</td>
+<td>Lipari Islands</td>
+<td align="right"></td>
+<td align="right">14.5</td>
+<td align="right">38.4</td>
+</tr>
+<tr>
+<td>Stromboli</td>
+<td>Lipari Islands</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lampedusa</td>
+<td>Pelagi Islands</td>
+<td align="right"></td>
+<td align="right">13.2</td>
+<td align="right">35.4</td>
+</tr>
+<tr>
+<td>Linosa</td>
+<td>Pelagi Islands</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Menorca</td>
+<td>Baleares</td>
+<td align="right">760</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Mallorca</td>
+<td>Baleares</td>
+<td align="right">3618</td>
+<td align="right">3</td>
+<td align="right">39.3</td>
+</tr>
+<tr>
+<td>Ibiza</td>
+<td>Baleares</td>
+<td align="right">572</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Formentera</td>
+<td>Baleares</td>
+<td align="right"></td>
+<td align="right">1.3</td>
+<td align="right">38.5</td>
+</tr>
+<tr>
+<td>Lanzarote</td>
+<td>Canares</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Fuerteventura</td>
+<td>Canares</td>
+<td align="right"></td>
+<td align="right">-14</td>
+<td align="right">28.3</td>
+</tr>
+<tr>
+<td>Gran Canaria</td>
+<td>Canares</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Teneriffa</td>
+<td>Canares</td>
+<td align="right"></td>
+<td align="right">-16.3</td>
+<td align="right">28.3</td>
+</tr>
+<tr>
+<td>Gomera</td>
+<td>Canares</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Hierro</td>
+<td>Canares</td>
+<td align="right"></td>
+<td align="right">-18</td>
+<td align="right">27.5</td>
+</tr>
+<tr>
+<td>Korfu</td>
+<td>Ionische Islands</td>
+<td align="right"></td>
+<td align="right">19</td>
+<td align="right">39.3</td>
+</tr>
+<tr>
+<td>Lefkas</td>
+<td>Ionische Islands</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Kefallinia</td>
+<td>Ionische Islands</td>
+<td align="right"></td>
+<td align="right">20.3</td>
+<td align="right">38.2</td>
+</tr>
+<tr>
+<td>Zakinthos</td>
+<td>Ionische Islands</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Kreta</td>
+<td> </td>
+<td align="right">8331</td>
+<td align="right">25</td>
+<td align="right">37</td>
+</tr>
+<tr>
+<td>Chios</td>
+<td>Sporades</td>
+<td align="right">806</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Samos</td>
+<td>Sporades</td>
+<td align="right"></td>
+<td align="right">26.5</td>
+<td align="right">37.4</td>
+</tr>
+<tr>
+<td>Ikaria</td>
+<td>Sporades</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Patmos</td>
+<td>Sporaden</td>
+<td align="right"></td>
+<td align="right">26.3</td>
+<td align="right">37.2</td>
+</tr>
+<tr>
+<td>Kos</td>
+<td>Sporades</td>
+<td align="right">290</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Tilos</td>
+<td>Sporades</td>
+<td align="right"></td>
+<td align="right">27.3</td>
+<td align="right">36.3</td>
+</tr>
+<tr>
+<td>Rhodos</td>
+<td>Sporades</td>
+<td align="right">1398</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Porto Santo</td>
+<td>Madeira</td>
+<td align="right"></td>
+<td align="right">-15.3</td>
+<td align="right">32.3</td>
+</tr>
+<tr>
+<td>Cangaroo Island</td>
+<td> </td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Melville Island</td>
+<td> </td>
+<td align="right">5800</td>
+<td align="right">131</td>
+<td align="right">-12</td>
+</tr>
+<tr>
+<td>Kauai</td>
+<td>Hawaii Islands</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Oahu</td>
+<td>Hawaii Islands</td>
+<td align="right"></td>
+<td align="right">-158</td>
+<td align="right">21.2</td>
+</tr>
+<tr>
+<td>Molokai</td>
+<td>Hawaii Islands</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lanai</td>
+<td>Hawaii Islands</td>
+<td align="right"></td>
+<td align="right">-157</td>
+<td align="right">20.5</td>
+</tr>
+<tr>
+<td>Maui</td>
+<td>Hawaii Islands</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Martha s Vineyard</td>
+<td> </td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Nantucket</td>
+<td> </td>
+<td align="right"></td>
+<td align="right">-70.1</td>
+<td align="right">41.5</td>
+</tr>
+<tr>
+<td>Santa Cruz Island</td>
+<td> </td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Santa Catalina Island</td>
+<td> </td>
+<td align="right"></td>
+<td align="right">-118.2</td>
+<td align="right">33.2</td>
+</tr>
+<tr>
+<td>Santa Rosa Island</td>
+<td> </td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>San Clemente Island</td>
+<td> </td>
+<td align="right"></td>
+<td align="right">-118.2</td>
+<td align="right">33</td>
+</tr>
+<tr>
+<td>San Miguel Island</td>
+<td> </td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Victoria Island</td>
+<td> </td>
+<td align="right"></td>
+<td align="right">-110</td>
+<td align="right">70</td>
+</tr>
+<tr>
+<td>Banks Island</td>
+<td> </td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Prince of Wales Island</td>
+<td> </td>
+<td align="right"></td>
+<td align="right">-100</td>
+<td align="right">73</td>
+</tr>
+<tr>
+<td>Baffin Island</td>
+<td> </td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Southampton Island</td>
+<td> </td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Prince Charles Island</td>
+<td> </td>
+<td align="right"></td>
+<td align="right">-76</td>
+<td align="right">67.5</td>
+</tr>
+<tr>
+<td>Vancouver Island</td>
+<td> </td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Khark</td>
+<td> </td>
+<td align="right">21</td>
+<td align="right">50.2</td>
+<td align="right">29.1</td>
+</tr>
+<tr>
+<td>Gheschm</td>
+<td> </td>
+<td align="right">1491</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lavan</td>
+<td> </td>
+<td align="right">76</td>
+<td align="right">53.1</td>
+<td align="right">26.5</td>
+</tr>
+<tr>
+<td>Fernando Poo</td>
+<td> </td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Gr Komoro</td>
+<td>Comores</td>
+<td align="right"></td>
+<td align="right">43.4</td>
+<td align="right">-11.7</td>
+</tr>
+<tr>
+<td>Anjouan</td>
+<td>Comores</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Mohilla</td>
+<td>Comores</td>
+<td align="right"></td>
+<td align="right">43.6</td>
+<td align="right">-12.7</td>
+</tr>
+<tr>
+<td>Mayotta</td>
+<td>Comores</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+</tbody></table>
+
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">name</th>
+<th title="Field #2">area</th>
+</tr></thead>
+<tbody><tr>
+<td>Tschadsee</td>
+<td align="right">17000</td>
+</tr>
+<tr>
+<td>Bodensee</td>
+<td align="right">539</td>
+</tr>
+<tr>
+<td>Maelaren</td>
+<td align="right">1140</td>
+</tr>
+<tr>
+<td>Caspian Sea</td>
+<td align="right">424200</td>
+</tr>
+<tr>
+<td>Lake Nicaragua</td>
+<td align="right">7997</td>
+</tr>
+<tr>
+<td>Lake Tanganjika</td>
+<td align="right">34000</td>
+</tr>
+<tr>
+<td>Lake Victoria</td>
+<td align="right">68000</td>
+</tr>
+<tr>
+<td>Vaettern</td>
+<td align="right">1900</td>
+</tr>
+<tr>
+<td>Vaenern</td>
+<td align="right">5546</td>
+</tr>
+<tr>
+<td>Lake Ontario</td>
+<td align="right">18941</td>
+</tr>
+<tr>
+<td>Great Slave Lake</td>
+<td align="right">28438</td>
+</tr>
+<tr>
+<td>Lake Michigan</td>
+<td align="right">58000</td>
+</tr>
+<tr>
+<td>Lake Erie</td>
+<td align="right">25612</td>
+</tr>
+<tr>
+<td>Great Salt Lake</td>
+<td align="right">2600</td>
+</tr>
+<tr>
+<td>Lake Maracaibo</td>
+<td align="right">3600</td>
+</tr>
+<tr>
+<td>Lake Kalla</td>
+<td align="right">900</td>
+</tr>
+<tr>
+<td>Lake Saima</td>
+<td align="right">1460</td>
+</tr>
+<tr>
+<td>Paeijaenne</td>
+<td align="right">1090</td>
+</tr>
+<tr>
+<td>Lake Ori</td>
+<td align="right">200</td>
+</tr>
+<tr>
+<td>Mjoesen</td>
+<td align="right">368</td>
+</tr>
+<tr>
+<td>Lake Naesi</td>
+<td align="right">250</td>
+</tr>
+<tr>
+<td>Lake Skutari</td>
+<td align="right">300</td>
+</tr>
+<tr>
+<td>Ozero Baikal</td>
+<td align="right">31500</td>
+</tr>
+<tr>
+<td>Ozero Aral</td>
+<td align="right">62155</td>
+</tr>
+<tr>
+<td>Lake Prespa</td>
+<td align="right">285</td>
+</tr>
+<tr>
+<td>Lake Ohrid</td>
+<td align="right">367</td>
+</tr>
+<tr>
+<td>Ozero Ladoga</td>
+<td align="right">18400</td>
+</tr>
+<tr>
+<td>Ozero Balchash</td>
+<td align="right">18200</td>
+</tr>
+<tr>
+<td>Ozero Onega</td>
+<td align="right">9610</td>
+</tr>
+<tr>
+<td>Ozero Taimyr</td>
+<td align="right">4560</td>
+</tr>
+<tr>
+<td>Ozero Chanka</td>
+<td align="right">4400</td>
+</tr>
+<tr>
+<td>Ozero Pskovskoje</td>
+<td align="right">3550</td>
+</tr>
+<tr>
+<td>Ozero Tschany</td>
+<td align="right">2500</td>
+</tr>
+<tr>
+<td>Inari</td>
+<td align="right">1085</td>
+</tr>
+<tr>
+<td>Lago di Garda </td>
+<td align="right">370</td>
+</tr>
+<tr>
+<td>Lake Amadeus</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Disappointment-Lake</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lake Torren</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lake Nasser</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lake Volta</td>
+<td align="right">8480</td>
+</tr>
+<tr>
+<td>Lake Tana</td>
+<td align="right">3630</td>
+</tr>
+<tr>
+<td>Lake Assale</td>
+<td align="right">100</td>
+</tr>
+<tr>
+<td>Lake Kainji</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lake Abaya</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lake Stephanie</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lake Suat</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lake Rudolph</td>
+<td align="right">8500</td>
+</tr>
+<tr>
+<td>Lake Albert</td>
+<td align="right">5347</td>
+</tr>
+<tr>
+<td>Lake Kioga</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lake Eduard</td>
+<td align="right">2200</td>
+</tr>
+<tr>
+<td>Lake Kivu</td>
+<td align="right">2650</td>
+</tr>
+<tr>
+<td>Lake Rukwa</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lake Natron</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lake Eyasi</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lake Mweru</td>
+<td align="right">4920</td>
+</tr>
+<tr>
+<td>Lake Bangweulu</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lake Nyasa</td>
+<td align="right">30800</td>
+</tr>
+<tr>
+<td>Lake Chilwa</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lake Cabora-Bassa</td>
+<td align="right">2800</td>
+</tr>
+<tr>
+<td>Lake Kariba</td>
+<td align="right">11000</td>
+</tr>
+<tr>
+<td>Lake Ngami</td>
+<td align="right">650</td>
+</tr>
+<tr>
+<td>Lake Etoscha</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lake Makarikari</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Issyk-Kul</td>
+<td align="right">6280</td>
+</tr>
+<tr>
+<td>Arresee</td>
+<td align="right">40</td>
+</tr>
+<tr>
+<td>Lake Titicaca</td>
+<td align="right">8300</td>
+</tr>
+<tr>
+<td>Lac Leman</td>
+<td align="right">581</td>
+</tr>
+<tr>
+<td>Lago Maggiore</td>
+<td align="right">216</td>
+</tr>
+<tr>
+<td>Lago di Como</td>
+<td align="right">146</td>
+</tr>
+<tr>
+<td>Lake Mackay</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lake Eyre</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lake Superior</td>
+<td align="right">84131</td>
+</tr>
+<tr>
+<td>Lake Huron</td>
+<td align="right">61797</td>
+</tr>
+<tr>
+<td>Lake Okeechobee</td>
+<td align="right">1813</td>
+</tr>
+<tr>
+<td>Kentucky Lake</td>
+<td align="right">648</td>
+</tr>
+<tr>
+<td>Chicamauga Lake</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lake Winnipesaukee</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lake Tahoe</td>
+<td align="right">500</td>
+</tr>
+<tr>
+<td>F.D.R. Lake</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lake Powell</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Lake Meade</td>
+<td align="right">637</td>
+</tr>
+<tr>
+<td>Lake Winnipeg</td>
+<td align="right">24514</td>
+</tr>
+<tr>
+<td>Lake Nipigon</td>
+<td align="right">4843</td>
+</tr>
+<tr>
+<td>Lake Williston</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Great Bear Lake</td>
+<td align="right">31792</td>
+</tr>
+<tr>
+<td>Lago de Chapala</td>
+<td align="right">1500</td>
+</tr>
+<tr>
+<td>Lake Urumiyeh</td>
+<td align="right">4868</td>
+</tr>
+<tr>
+<td>Daryacheh ye Namak</td>
+<td align="right">1806</td>
+</tr>
+<tr>
+<td>Hamun e Jaz Murian</td>
+<td align="right">1097</td>
+</tr>
+<tr>
+<td>Barrage de Mbakaou</td>
+<td align="right"></td>
+</tr>
+</tbody></table>
+
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">name</th>
+<th title="Field #2">height</th>
+<th title="Field #3">longitude</th>
+<th title="Field #4">latitude</th>
+</tr></thead>
+<tbody><tr>
+<td>Meru</td>
+<td align="right">4567</td>
+<td align="right">6.8</td>
+<td align="right">-3.2</td>
+</tr>
+<tr>
+<td>Kilimanjaro</td>
+<td align="right">5895</td>
+<td align="right">37</td>
+<td align="right">-3</td>
+</tr>
+<tr>
+<td>Cathkin Peak</td>
+<td align="right">3660</td>
+<td align="right">29.3</td>
+<td align="right">-29.2</td>
+</tr>
+<tr>
+<td>Kenia</td>
+<td align="right">5194</td>
+<td align="right">7.4</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>Jezerce</td>
+<td align="right">2694</td>
+<td align="right">19.4</td>
+<td align="right">42.3</td>
+</tr>
+<tr>
+<td>Korab</td>
+<td align="right">2751</td>
+<td align="right">20.3</td>
+<td align="right">41.4</td>
+</tr>
+<tr>
+<td>Kebnekaise</td>
+<td align="right">2114</td>
+<td align="right">18.3</td>
+<td align="right">67.5</td>
+</tr>
+<tr>
+<td>Sarektjokko</td>
+<td align="right">2090</td>
+<td align="right">17.4</td>
+<td align="right">67.3</td>
+</tr>
+<tr>
+<td>Portefjaellen</td>
+<td align="right">2021</td>
+<td align="right">17.4</td>
+<td align="right">67.1</td>
+</tr>
+<tr>
+<td>Tarrekaise</td>
+<td align="right">1850</td>
+<td align="right">17.3</td>
+<td align="right">67</td>
+</tr>
+<tr>
+<td>Sulitjelma</td>
+<td align="right">1914</td>
+<td align="right">16.2</td>
+<td align="right">67.1</td>
+</tr>
+<tr>
+<td>Galdhoeppig</td>
+<td align="right">2469</td>
+<td align="right">8</td>
+<td align="right">61.4</td>
+</tr>
+<tr>
+<td>Jostedalsbre</td>
+<td align="right">2083</td>
+<td align="right">5.5</td>
+<td align="right">61.4</td>
+</tr>
+<tr>
+<td>Glittertind</td>
+<td align="right">2452</td>
+<td align="right">8.1</td>
+<td align="right">61.4</td>
+</tr>
+<tr>
+<td>Joekul</td>
+<td align="right">1876</td>
+<td align="right">7.2</td>
+<td align="right">60.3</td>
+</tr>
+<tr>
+<td>Snoehetta</td>
+<td align="right">2286</td>
+<td align="right">9</td>
+<td align="right">62.1</td>
+</tr>
+<tr>
+<td>Pik Kommunizma</td>
+<td align="right">7494</td>
+<td align="right">72</td>
+<td align="right">39</td>
+</tr>
+<tr>
+<td>Pik Pobeda</td>
+<td align="right">7439</td>
+<td align="right">80.1</td>
+<td align="right">42</td>
+</tr>
+<tr>
+<td>Pik Lenina</td>
+<td align="right">7134</td>
+<td align="right">72.55</td>
+<td align="right">39.2</td>
+</tr>
+<tr>
+<td>Pik Chan-Tengri</td>
+<td align="right">6995</td>
+<td align="right">80</td>
+<td align="right">43</td>
+</tr>
+<tr>
+<td>Pik Revoluzija</td>
+<td align="right">6974</td>
+<td align="right">72.2</td>
+<td align="right">38.3</td>
+</tr>
+<tr>
+<td>Pik Moskva</td>
+<td align="right">6785</td>
+<td align="right">71.5</td>
+<td align="right">39</td>
+</tr>
+<tr>
+<td>Elbrus</td>
+<td align="right">5642</td>
+<td align="right">42.26</td>
+<td align="right">43.21</td>
+</tr>
+<tr>
+<td>Kasbek</td>
+<td align="right">5033</td>
+<td align="right">44.31</td>
+<td align="right">42.42</td>
+</tr>
+<tr>
+<td>Bjelucha</td>
+<td align="right">4506</td>
+<td align="right">86.4</td>
+<td align="right">49.48</td>
+</tr>
+<tr>
+<td>Oeraefajoekull</td>
+<td align="right">2119</td>
+<td align="right">-17</td>
+<td align="right">64.1</td>
+</tr>
+<tr>
+<td>Snoefell</td>
+<td align="right">1833</td>
+<td align="right">-15.2</td>
+<td align="right">64.5</td>
+</tr>
+<tr>
+<td>Haltiatunturi</td>
+<td align="right">1328</td>
+<td align="right">21.4</td>
+<td align="right">67</td>
+</tr>
+<tr>
+<td>Mauna Kea</td>
+<td align="right">4205</td>
+<td align="right">-155.3</td>
+<td align="right">19.5</td>
+</tr>
+<tr>
+<td>Mt McKinley</td>
+<td align="right">6193</td>
+<td align="right">-152</td>
+<td align="right">62</td>
+</tr>
+<tr>
+<td>Humphreys Peak</td>
+<td align="right">3850</td>
+<td align="right">-112</td>
+<td align="right">35.4</td>
+</tr>
+<tr>
+<td>Mt Whitney</td>
+<td align="right">4418</td>
+<td align="right">-118.2</td>
+<td align="right">36.4</td>
+</tr>
+<tr>
+<td>Mt Elbert</td>
+<td align="right">4399</td>
+<td align="right">-106.3</td>
+<td align="right">39</td>
+</tr>
+<tr>
+<td>Borah Peak</td>
+<td align="right">3859</td>
+<td align="right">-114</td>
+<td align="right">44.1</td>
+</tr>
+<tr>
+<td>Granite Peak</td>
+<td align="right">3901</td>
+<td align="right">-109.5</td>
+<td align="right">45</td>
+</tr>
+<tr>
+<td>Mt Washington</td>
+<td align="right">1917</td>
+<td align="right">-71.2</td>
+<td align="right">44.2</td>
+</tr>
+<tr>
+<td>Boundary Peak</td>
+<td align="right">4006</td>
+<td align="right">-118.3</td>
+<td align="right">37.5</td>
+</tr>
+<tr>
+<td>Mt Mitchell</td>
+<td align="right">2037</td>
+<td align="right">-82.1</td>
+<td align="right">35.4</td>
+</tr>
+<tr>
+<td>Mt Hood</td>
+<td align="right">3424</td>
+<td align="right">-121.5</td>
+<td align="right">45.2</td>
+</tr>
+<tr>
+<td>Harney Peak</td>
+<td align="right">2207</td>
+<td align="right">-103.4</td>
+<td align="right">44</td>
+</tr>
+<tr>
+<td>Clingmans Dome</td>
+<td align="right">2025</td>
+<td align="right">-83.2</td>
+<td align="right">35.3</td>
+</tr>
+<tr>
+<td>Guadalupe Peak</td>
+<td align="right">2667</td>
+<td align="right">-105</td>
+<td align="right">32</td>
+</tr>
+<tr>
+<td>Kings Peak</td>
+<td align="right">4123</td>
+<td align="right">-110.4</td>
+<td align="right">40.5</td>
+</tr>
+<tr>
+<td>Mt Rainier</td>
+<td align="right">4392</td>
+<td align="right">-122</td>
+<td align="right">46.5</td>
+</tr>
+<tr>
+<td>Gannett Peak</td>
+<td align="right">4207</td>
+<td align="right">-110</td>
+<td align="right">43.2</td>
+</tr>
+<tr>
+<td>Mt Robson</td>
+<td align="right">3954</td>
+<td align="right">-119.1</td>
+<td align="right">52.3</td>
+</tr>
+<tr>
+<td>Mt Aylmer</td>
+<td align="right">3162</td>
+<td align="right">-115.4</td>
+<td align="right">51.4</td>
+</tr>
+<tr>
+<td>Citlaltepetl</td>
+<td align="right">5700</td>
+<td align="right">-97</td>
+<td align="right">19</td>
+</tr>
+<tr>
+<td>Popocatepetl</td>
+<td align="right">5450</td>
+<td align="right">-98</td>
+<td align="right">19</td>
+</tr>
+<tr>
+<td>Nevado de Toluca</td>
+<td align="right">4558</td>
+<td align="right">-99</td>
+<td align="right">19</td>
+</tr>
+<tr>
+<td>Nevado de Colima</td>
+<td align="right">4330</td>
+<td align="right">-104</td>
+<td align="right">20</td>
+</tr>
+<tr>
+<td>Damavand</td>
+<td align="right">5671</td>
+<td align="right">35.56</td>
+<td align="right">52.08</td>
+</tr>
+<tr>
+<td>Sabalan</td>
+<td align="right">4811</td>
+<td align="right">38.15</td>
+<td align="right">47.49</td>
+</tr>
+<tr>
+<td>Tubhal</td>
+<td align="right">4165</td>
+<td align="right">-8</td>
+<td align="right">31</td>
+</tr>
+<tr>
+<td>Djebel Aures</td>
+<td align="right">2328</td>
+<td align="right">6.5</td>
+<td align="right">35.5</td>
+</tr>
+<tr>
+<td>Tahat</td>
+<td align="right">2918</td>
+<td align="right">6</td>
+<td align="right">23</td>
+</tr>
+<tr>
+<td>Emi Kussi</td>
+<td align="right">3415</td>
+<td align="right">18.5</td>
+<td align="right">20</td>
+</tr>
+<tr>
+<td>Jabal Marra</td>
+<td align="right">3088</td>
+<td align="right">24.6</td>
+<td align="right">13</td>
+</tr>
+<tr>
+<td>Tamgak</td>
+<td align="right">1800</td>
+<td align="right">9</td>
+<td align="right">19</td>
+</tr>
+<tr>
+<td>Ras Daschan</td>
+<td align="right">4620</td>
+<td align="right">38</td>
+<td align="right">13</td>
+</tr>
+<tr>
+<td>Fako</td>
+<td align="right">4095</td>
+<td align="right">9</td>
+<td align="right">4</td>
+</tr>
+<tr>
+<td>Mpika</td>
+<td align="right">1840</td>
+<td align="right">31</td>
+<td align="right">-12</td>
+</tr>
+<tr>
+<td>Mt-Grebun</td>
+<td align="right">2310</td>
+<td align="right">9</td>
+<td align="right">20</td>
+</tr>
+<tr>
+<td>Fuji-Yama</td>
+<td align="right">3776</td>
+<td align="right">139</td>
+<td align="right">35</td>
+</tr>
+<tr>
+<td>Hotaka-Dake</td>
+<td align="right">3190</td>
+<td align="right">138</td>
+<td align="right">36</td>
+</tr>
+<tr>
+<td>Mount Everest</td>
+<td align="right">8848</td>
+<td align="right">87</td>
+<td align="right">28</td>
+</tr>
+<tr>
+<td>Mount Godwin Austen</td>
+<td align="right">8611</td>
+<td align="right">77</td>
+<td align="right">36</td>
+</tr>
+<tr>
+<td>Tahan</td>
+<td align="right">2190</td>
+<td align="right">108</td>
+<td align="right">4</td>
+</tr>
+<tr>
+<td>Leuser</td>
+<td align="right">3466</td>
+<td align="right">98</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td>Semeru</td>
+<td align="right">3676</td>
+<td align="right">113</td>
+<td align="right">-8</td>
+</tr>
+<tr>
+<td>Pulog</td>
+<td align="right">2928</td>
+<td align="right">121</td>
+<td align="right">17</td>
+</tr>
+<tr>
+<td>Kinabalu</td>
+<td align="right">4101</td>
+<td align="right">117</td>
+<td align="right">7</td>
+</tr>
+<tr>
+<td>Mount Morrison</td>
+<td align="right">3950</td>
+<td align="right">121</td>
+<td align="right">23</td>
+</tr>
+<tr>
+<td>Feldberg</td>
+<td align="right">1493</td>
+<td align="right">7.5</td>
+<td align="right">47.5</td>
+</tr>
+<tr>
+<td>Grosser Arber</td>
+<td align="right">1456</td>
+<td align="right">13</td>
+<td align="right">49.1</td>
+</tr>
+<tr>
+<td>Zugspitze</td>
+<td align="right">2963</td>
+<td align="right">11.1</td>
+<td align="right">47.3</td>
+</tr>
+<tr>
+<td>Grossglockner</td>
+<td align="right">3797</td>
+<td align="right">12.5</td>
+<td align="right">47</td>
+</tr>
+<tr>
+<td>Montblanc</td>
+<td align="right">4807</td>
+<td align="right">6</td>
+<td align="right">45</td>
+</tr>
+<tr>
+<td>Aconcagua</td>
+<td align="right">6958</td>
+<td align="right">-70</td>
+<td align="right">-32.5</td>
+</tr>
+<tr>
+<td>Blue Mountain Peak</td>
+<td align="right">2256</td>
+<td align="right">-76.4</td>
+<td align="right">18.1</td>
+</tr>
+<tr>
+<td>Huascaran</td>
+<td align="right">6768</td>
+<td align="right">-77.3</td>
+<td align="right">-9</td>
+</tr>
+<tr>
+<td>Chimborazo</td>
+<td align="right">6287</td>
+<td align="right">-78.5</td>
+<td align="right">-1.2</td>
+</tr>
+<tr>
+<td>Pico Duarte</td>
+<td align="right">3175</td>
+<td align="right">-71.3</td>
+<td align="right">18.3</td>
+</tr>
+<tr>
+<td>Illampu</td>
+<td align="right">6550</td>
+<td align="right">-68.5</td>
+<td align="right">-15.2</td>
+</tr>
+<tr>
+<td>Llullaillaco</td>
+<td align="right">6723</td>
+<td align="right">-68</td>
+<td align="right">-24.5</td>
+</tr>
+<tr>
+<td>Mt. Kosciuszko</td>
+<td align="right">2228</td>
+<td align="right">148</td>
+<td align="right">-36.5</td>
+</tr>
+<tr>
+<td>Mt. Bogong</td>
+<td align="right">1986</td>
+<td align="right">147.5</td>
+<td align="right">-37</td>
+</tr>
+</tbody></table>
+
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">name</th>
+<th title="Field #2">river</th>
+<th title="Field #3">lake</th>
+<th title="Field #4">sea</th>
+<th title="Field #5">length</th>
+</tr></thead>
+<tbody><tr>
+<td>Paraguay</td>
+<td>Parana</td>
+<td> </td>
+<td> </td>
+<td align="right">2200</td>
+</tr>
+<tr>
+<td>Uruguay</td>
+<td>Rio de la Plata</td>
+<td> </td>
+<td> </td>
+<td align="right">1650</td>
+</tr>
+<tr>
+<td>Niger</td>
+<td> </td>
+<td> </td>
+<td>Atlantic Ocean</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Zaire</td>
+<td> </td>
+<td> </td>
+<td>Atlantic Ocean</td>
+<td align="right">4320</td>
+</tr>
+<tr>
+<td>Gambia</td>
+<td> </td>
+<td> </td>
+<td>Atlantic Ocean</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Senegal</td>
+<td> </td>
+<td> </td>
+<td>Atlantic Ocean</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Arkansas</td>
+<td>Mississippi</td>
+<td> </td>
+<td> </td>
+<td align="right">2334</td>
+</tr>
+<tr>
+<td>Colorado</td>
+<td> </td>
+<td> </td>
+<td>Pacific Ocean</td>
+<td align="right">2700</td>
+</tr>
+<tr>
+<td>Mississippi</td>
+<td> </td>
+<td> </td>
+<td>Gulf of Mexico</td>
+<td align="right">3750</td>
+</tr>
+<tr>
+<td>Missouri</td>
+<td>Mississippi</td>
+<td> </td>
+<td> </td>
+<td align="right">3726</td>
+</tr>
+<tr>
+<td>Amazonas</td>
+<td> </td>
+<td> </td>
+<td>Atlantic Ocean</td>
+<td align="right">6518</td>
+</tr>
+<tr>
+<td>Parana</td>
+<td>Rio de la Plata</td>
+<td> </td>
+<td> </td>
+<td align="right">4700</td>
+</tr>
+<tr>
+<td>Cunene</td>
+<td> </td>
+<td> </td>
+<td>Atlantic Ocean</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Ruvuma</td>
+<td> </td>
+<td> </td>
+<td>Indian Ocean</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Rio Grande</td>
+<td> </td>
+<td> </td>
+<td>Gulf of Mexico</td>
+<td align="right">3030</td>
+</tr>
+<tr>
+<td>Oka</td>
+<td>Volga</td>
+<td> </td>
+<td> </td>
+<td align="right">1480</td>
+</tr>
+<tr>
+<td>Seine</td>
+<td> </td>
+<td> </td>
+<td>North Sea</td>
+<td align="right">776</td>
+</tr>
+<tr>
+<td>Donau</td>
+<td> </td>
+<td> </td>
+<td>Black Sea</td>
+<td align="right">2850</td>
+</tr>
+<tr>
+<td>Western Dwina</td>
+<td> </td>
+<td> </td>
+<td>Baltic Sea</td>
+<td align="right">1020</td>
+</tr>
+<tr>
+<td>Weichsel</td>
+<td> </td>
+<td> </td>
+<td>Baltic Sea</td>
+<td align="right">1068</td>
+</tr>
+<tr>
+<td>Dnepr</td>
+<td> </td>
+<td> </td>
+<td>Black Sea</td>
+<td align="right">2201</td>
+</tr>
+<tr>
+<td>Thames</td>
+<td> </td>
+<td> </td>
+<td>North Sea</td>
+<td align="right">346</td>
+</tr>
+<tr>
+<td>Kura</td>
+<td> </td>
+<td>Caspian Sea</td>
+<td> </td>
+<td align="right">1364</td>
+</tr>
+<tr>
+<td>Rio de la Plata</td>
+<td> </td>
+<td> </td>
+<td>Atlantic Ocean</td>
+<td align="right">300</td>
+</tr>
+<tr>
+<td>Ubangi</td>
+<td>Zaire</td>
+<td> </td>
+<td> </td>
+<td align="right">2300</td>
+</tr>
+<tr>
+<td>Schari</td>
+<td> </td>
+<td>Tschadsee</td>
+<td> </td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Nile</td>
+<td> </td>
+<td> </td>
+<td>Mediterranean Sea</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Loire</td>
+<td> </td>
+<td> </td>
+<td>Atlantic Ocean</td>
+<td align="right">1010</td>
+</tr>
+<tr>
+<td>Garonne</td>
+<td> </td>
+<td> </td>
+<td>Atlantic Ocean</td>
+<td align="right">650</td>
+</tr>
+<tr>
+<td>Rhone</td>
+<td> </td>
+<td> </td>
+<td>Mediterranean Sea</td>
+<td align="right">812</td>
+</tr>
+<tr>
+<td>Weser</td>
+<td> </td>
+<td> </td>
+<td>North Sea</td>
+<td align="right">477</td>
+</tr>
+<tr>
+<td>Elbe</td>
+<td> </td>
+<td> </td>
+<td>North Sea</td>
+<td align="right">1144</td>
+</tr>
+<tr>
+<td>Rhein</td>
+<td> </td>
+<td>Bodensee</td>
+<td>North Sea</td>
+<td align="right">1320</td>
+</tr>
+<tr>
+<td>Goetaaelv</td>
+<td> </td>
+<td> </td>
+<td>North Sea</td>
+<td align="right">93</td>
+</tr>
+<tr>
+<td>Klaraelv</td>
+<td> </td>
+<td>Vaenern</td>
+<td> </td>
+<td align="right">347</td>
+</tr>
+<tr>
+<td>Umeaelv</td>
+<td> </td>
+<td> </td>
+<td>Baltic Sea</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>St. Lorenzstrom</td>
+<td> </td>
+<td> </td>
+<td>Atlantic Ocean</td>
+<td align="right">1170</td>
+</tr>
+<tr>
+<td>Hudson River</td>
+<td> </td>
+<td> </td>
+<td>Atlantic Ocean</td>
+<td align="right">493</td>
+</tr>
+<tr>
+<td>Connecticut River</td>
+<td> </td>
+<td> </td>
+<td>Atlantic Ocean</td>
+<td align="right">660</td>
+</tr>
+<tr>
+<td>Moldau</td>
+<td>Elbe</td>
+<td> </td>
+<td> </td>
+<td align="right">435</td>
+</tr>
+<tr>
+<td>Ounasjoki</td>
+<td>Kemijoki</td>
+<td> </td>
+<td> </td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Kemijoki</td>
+<td> </td>
+<td> </td>
+<td>Baltic Sea</td>
+<td align="right">520</td>
+</tr>
+<tr>
+<td>Oulujoki</td>
+<td> </td>
+<td> </td>
+<td>Baltic Sea</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Kokemaeenjoki</td>
+<td> </td>
+<td> </td>
+<td>Baltic Sea</td>
+<td align="right">169</td>
+</tr>
+<tr>
+<td>Northern Dwina</td>
+<td> </td>
+<td> </td>
+<td>Arctic Ocean</td>
+<td align="right">740</td>
+</tr>
+<tr>
+<td>Jenissej</td>
+<td> </td>
+<td> </td>
+<td>Arctic Ocean</td>
+<td align="right">4130</td>
+</tr>
+<tr>
+<td>Volga</td>
+<td> </td>
+<td>Caspian Sea</td>
+<td> </td>
+<td align="right">3531</td>
+</tr>
+<tr>
+<td>Casai</td>
+<td>Kwa</td>
+<td> </td>
+<td> </td>
+<td align="right">1570</td>
+</tr>
+<tr>
+<td>Kwa</td>
+<td>Zaire</td>
+<td> </td>
+<td> </td>
+<td align="right">100</td>
+</tr>
+<tr>
+<td>Cuilo</td>
+<td>Kwa</td>
+<td> </td>
+<td> </td>
+<td align="right">970</td>
+</tr>
+<tr>
+<td>Cuango</td>
+<td>Kwa</td>
+<td> </td>
+<td> </td>
+<td align="right">1230</td>
+</tr>
+<tr>
+<td>Cuanza</td>
+<td> </td>
+<td> </td>
+<td>Atlantic Ocean</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Zambezi</td>
+<td> </td>
+<td> </td>
+<td>Indian Ocean</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Chire</td>
+<td>Zambezi</td>
+<td> </td>
+<td> </td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Neva</td>
+<td> </td>
+<td> </td>
+<td>Baltic Sea</td>
+<td align="right">74</td>
+</tr>
+<tr>
+<td>White Drin</td>
+<td>Drin</td>
+<td> </td>
+<td> </td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Drin</td>
+<td> </td>
+<td> </td>
+<td>Mediterranean Sea</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Black Drin</td>
+<td>Drin</td>
+<td> </td>
+<td> </td>
+<td align="right">133</td>
+</tr>
+<tr>
+<td>Thjorsa</td>
+<td> </td>
+<td> </td>
+<td>Atlantic Ocean</td>
+<td align="right">230</td>
+</tr>
+<tr>
+<td>Joekulsa a Fjoellum</td>
+<td> </td>
+<td> </td>
+<td>Norwegian Sea</td>
+<td align="right">206</td>
+</tr>
+<tr>
+<td>Oesterdalaelv</td>
+<td>Dalaelv</td>
+<td> </td>
+<td> </td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Dalaelv</td>
+<td> </td>
+<td> </td>
+<td>Baltic Sea</td>
+<td align="right">520</td>
+</tr>
+<tr>
+<td>Vaesterdalaelv</td>
+<td>Dalaelv</td>
+<td> </td>
+<td> </td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Torneaelv</td>
+<td> </td>
+<td> </td>
+<td>Baltic Sea</td>
+<td align="right">375</td>
+</tr>
+<tr>
+<td>Gloma</td>
+<td> </td>
+<td> </td>
+<td>North Sea</td>
+<td align="right">598</td>
+</tr>
+<tr>
+<td>Lena</td>
+<td> </td>
+<td> </td>
+<td>Arctic Ocean</td>
+<td align="right">4400</td>
+</tr>
+<tr>
+<td>Ob</td>
+<td> </td>
+<td> </td>
+<td>Arctic Ocean</td>
+<td align="right">3680</td>
+</tr>
+<tr>
+<td>Amur</td>
+<td> </td>
+<td> </td>
+<td>Arctic Ocean</td>
+<td align="right">2918</td>
+</tr>
+<tr>
+<td>Petschora</td>
+<td> </td>
+<td> </td>
+<td>Arctic Ocean</td>
+<td align="right">1809</td>
+</tr>
+<tr>
+<td>Kolyma</td>
+<td> </td>
+<td> </td>
+<td>Arctic Ocean</td>
+<td align="right">2513</td>
+</tr>
+<tr>
+<td>Chatanga</td>
+<td> </td>
+<td> </td>
+<td>Arctic Ocean</td>
+<td align="right">1636</td>
+</tr>
+<tr>
+<td>Bija</td>
+<td>Ob</td>
+<td> </td>
+<td> </td>
+<td align="right">688</td>
+</tr>
+<tr>
+<td>Katun</td>
+<td>Ob</td>
+<td> </td>
+<td> </td>
+<td align="right">306</td>
+</tr>
+<tr>
+<td>Irtysch</td>
+<td>Ob</td>
+<td> </td>
+<td> </td>
+<td align="right">4248</td>
+</tr>
+<tr>
+<td>Tobol</td>
+<td>Ob</td>
+<td> </td>
+<td> </td>
+<td align="right">1591</td>
+</tr>
+<tr>
+<td>Ischim</td>
+<td>Irtysch</td>
+<td> </td>
+<td> </td>
+<td align="right">2450</td>
+</tr>
+<tr>
+<td>Schilka</td>
+<td>Amur</td>
+<td> </td>
+<td> </td>
+<td align="right">560</td>
+</tr>
+<tr>
+<td>Argun</td>
+<td>Amur</td>
+<td> </td>
+<td> </td>
+<td align="right">1620</td>
+</tr>
+<tr>
+<td>Ingoda</td>
+<td>Schilka</td>
+<td> </td>
+<td> </td>
+<td align="right">708</td>
+</tr>
+<tr>
+<td>Onon</td>
+<td>Schilka</td>
+<td> </td>
+<td> </td>
+<td align="right">1032</td>
+</tr>
+<tr>
+<td>Black Irtysch</td>
+<td>Irtysch</td>
+<td> </td>
+<td> </td>
+<td align="right">672</td>
+</tr>
+<tr>
+<td>Grosser Jenissej</td>
+<td>Jenissej</td>
+<td> </td>
+<td> </td>
+<td align="right">605</td>
+</tr>
+<tr>
+<td>Kleiner Jenissej</td>
+<td>Jenissej</td>
+<td> </td>
+<td> </td>
+<td align="right">680</td>
+</tr>
+<tr>
+<td>Suchona</td>
+<td>Northern Dwina</td>
+<td> </td>
+<td> </td>
+<td align="right">562</td>
+</tr>
+<tr>
+<td>Jug</td>
+<td>Northern Dwina</td>
+<td> </td>
+<td> </td>
+<td align="right">574</td>
+</tr>
+<tr>
+<td>Amudarja</td>
+<td> </td>
+<td>Ozero Aral</td>
+<td> </td>
+<td align="right">1415</td>
+</tr>
+<tr>
+<td>Pjandsh</td>
+<td>Amudarja</td>
+<td> </td>
+<td> </td>
+<td align="right">1125</td>
+</tr>
+<tr>
+<td>Don</td>
+<td> </td>
+<td> </td>
+<td>Sea of Azov</td>
+<td align="right">1870</td>
+</tr>
+<tr>
+<td>Syrdarja</td>
+<td> </td>
+<td>Ozero Aral</td>
+<td> </td>
+<td align="right">2212</td>
+</tr>
+<tr>
+<td>Ural</td>
+<td> </td>
+<td>Caspian Sea</td>
+<td> </td>
+<td align="right">2428</td>
+</tr>
+<tr>
+<td>Kitakami</td>
+<td> </td>
+<td> </td>
+<td>Pacific Ocean</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Han</td>
+<td> </td>
+<td> </td>
+<td>Yellow Sea</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Jangtse-Kiang</td>
+<td> </td>
+<td> </td>
+<td>East China Sea</td>
+<td align="right">6100</td>
+</tr>
+<tr>
+<td>Hwangho</td>
+<td> </td>
+<td> </td>
+<td>Yellow Sea</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Mekong</td>
+<td> </td>
+<td> </td>
+<td>South China Sea</td>
+<td align="right">4500</td>
+</tr>
+<tr>
+<td>Orinoco</td>
+<td> </td>
+<td> </td>
+<td>Atlantic Ocean</td>
+<td align="right">2736</td>
+</tr>
+<tr>
+<td>Werra</td>
+<td>Weser</td>
+<td> </td>
+<td> </td>
+<td align="right">292</td>
+</tr>
+<tr>
+<td>Fulda</td>
+<td>Weser</td>
+<td> </td>
+<td> </td>
+<td align="right">218</td>
+</tr>
+<tr>
+<td>Columbia River</td>
+<td> </td>
+<td> </td>
+<td>Pacific Ocean</td>
+<td align="right">1952</td>
+</tr>
+<tr>
+<td>Rio Balsas</td>
+<td> </td>
+<td> </td>
+<td>Atlantic Ocean</td>
+<td align="right">770</td>
+</tr>
+<tr>
+<td>Karun</td>
+<td> </td>
+<td> </td>
+<td>Persian Gulf</td>
+<td align="right">890</td>
+</tr>
+<tr>
+<td>Blue Nile</td>
+<td>Nile</td>
+<td> </td>
+<td> </td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>White Nile</td>
+<td>Nile</td>
+<td> </td>
+<td> </td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Atbara</td>
+<td>Nile</td>
+<td> </td>
+<td> </td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Bahr el-Gasal</td>
+<td>White Nile</td>
+<td> </td>
+<td> </td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Bahr el-Djebel</td>
+<td>White Nile</td>
+<td> </td>
+<td> </td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Sobat</td>
+<td>White Nile</td>
+<td> </td>
+<td> </td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Pibor</td>
+<td>Sobat</td>
+<td> </td>
+<td> </td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Baro</td>
+<td>Sobat</td>
+<td> </td>
+<td> </td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Djuba</td>
+<td> </td>
+<td> </td>
+<td>Indian Ocean</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Webi Schebeli</td>
+<td> </td>
+<td> </td>
+<td>Indian Ocean</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Bani</td>
+<td>Niger</td>
+<td> </td>
+<td> </td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Volta</td>
+<td> </td>
+<td> </td>
+<td>Atlantic Ocean</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Benue</td>
+<td>Niger</td>
+<td> </td>
+<td> </td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Sanaga</td>
+<td> </td>
+<td> </td>
+<td>Atlantic Ocean</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Sanga</td>
+<td>Zaire</td>
+<td> </td>
+<td> </td>
+<td align="right">530</td>
+</tr>
+<tr>
+<td>Bomu</td>
+<td>Ubangi</td>
+<td> </td>
+<td> </td>
+<td align="right">280</td>
+</tr>
+<tr>
+<td>Uelle</td>
+<td>Ubangi</td>
+<td> </td>
+<td> </td>
+<td align="right">560</td>
+</tr>
+<tr>
+<td>Lukuga</td>
+<td>Zaire</td>
+<td> </td>
+<td> </td>
+<td align="right">230</td>
+</tr>
+<tr>
+<td>Luvua</td>
+<td>Zaire</td>
+<td> </td>
+<td> </td>
+<td align="right">210</td>
+</tr>
+<tr>
+<td>Lomami</td>
+<td>Zaire</td>
+<td> </td>
+<td> </td>
+<td align="right">1600</td>
+</tr>
+<tr>
+<td>Ruki</td>
+<td>Zaire</td>
+<td> </td>
+<td> </td>
+<td align="right">730</td>
+</tr>
+<tr>
+<td>Kafue</td>
+<td>Zambezi</td>
+<td> </td>
+<td> </td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Luangwa</td>
+<td>Zambezi</td>
+<td> </td>
+<td> </td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Tana</td>
+<td> </td>
+<td> </td>
+<td>Indian Ocean</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Rufiji</td>
+<td> </td>
+<td> </td>
+<td>Indian Ocean</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Save</td>
+<td> </td>
+<td> </td>
+<td>Indian Ocean</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Limpopo</td>
+<td> </td>
+<td> </td>
+<td>Indian Ocean</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Oranje</td>
+<td> </td>
+<td> </td>
+<td>Atlantic Ocean</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Vaal</td>
+<td>Oranje</td>
+<td> </td>
+<td> </td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Busira</td>
+<td>Ruki</td>
+<td> </td>
+<td> </td>
+<td align="right">830</td>
+</tr>
+<tr>
+<td>Tshuapa</td>
+<td>Busira</td>
+<td> </td>
+<td> </td>
+<td align="right">1300</td>
+</tr>
+</tbody></table>
+
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">name</th>
+<th title="Field #2">depth</th>
+</tr></thead>
+<tbody><tr>
+<td>Baltic Sea</td>
+<td align="right">459</td>
+</tr>
+<tr>
+<td>Mediterranean Sea</td>
+<td align="right">5121</td>
+</tr>
+<tr>
+<td>Atlantic Ocean</td>
+<td align="right">9219</td>
+</tr>
+<tr>
+<td>Irish Sea</td>
+<td align="right">272</td>
+</tr>
+<tr>
+<td>North Sea</td>
+<td align="right">200</td>
+</tr>
+<tr>
+<td>Persian Gulf</td>
+<td align="right">102</td>
+</tr>
+<tr>
+<td>Caribbean Sea</td>
+<td align="right">7240</td>
+</tr>
+<tr>
+<td>Gulf of Mexico</td>
+<td align="right">4375</td>
+</tr>
+<tr>
+<td>Pacific Ocean</td>
+<td align="right">11034</td>
+</tr>
+<tr>
+<td>Indian Ocean</td>
+<td align="right">6400</td>
+</tr>
+<tr>
+<td>Gulf of Aden</td>
+<td align="right">5143</td>
+</tr>
+<tr>
+<td>Norwegian Sea</td>
+<td align="right">3860</td>
+</tr>
+<tr>
+<td>Arctic Ocean</td>
+<td align="right">5220</td>
+</tr>
+<tr>
+<td>Sea of Japan</td>
+<td align="right">4036</td>
+</tr>
+<tr>
+<td>Black Sea</td>
+<td align="right">2211</td>
+</tr>
+<tr>
+<td>Sea of Azov</td>
+<td align="right">100</td>
+</tr>
+<tr>
+<td>Yellow Sea</td>
+<td align="right">200</td>
+</tr>
+<tr>
+<td>East China Sea</td>
+<td align="right">2370</td>
+</tr>
+<tr>
+<td>South China Sea</td>
+<td align="right">5420</td>
+</tr>
+<tr>
+<td>Sunda Sea</td>
+<td align="right">7440</td>
+</tr>
+<tr>
+<td>Arabian Sea</td>
+<td align="right">5203</td>
+</tr>
+<tr>
+<td>Red Sea</td>
+<td align="right">2635</td>
+</tr>
+</tbody></table>
+</body>
+</html>
